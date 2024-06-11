@@ -3,12 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion"
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import { smoothScrollTo } from '../utils/smoothScroll';
 import HubSpotForm from "./formhub";
 
-const LandingPage = () => {
-  const handleSmoothScroll = (e, id) => {
+const LandingPage: React.FC = () => {
+  const handleSmoothScroll = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     smoothScrollTo(id);
   };

@@ -77,18 +77,18 @@ const Footer = () => {
             
             <div className="flex py-2">
             <Link href="https://api.whatsapp.com/send/?phone=5541984713006&text&type=phone_number&app_absent=0" className="hover:scale-125 transition duration-50 ease-in-out p-2" passHref target="_blank">
-              <img src="/svg/wp.svg" alt="WhatsApp" />
+              <Image src="/svg/wp.svg" alt="WhatsApp" />
             </Link>
             <Link href="https://www.instagram.com/klfacilities/" className="hover:scale-125 transition duration-50 ease-in-out p-2" passHref target="_blank">
-              <img src="/svg/insta.svg" alt="Instagram" />
+              <Image src="/svg/insta.svg" alt="Instagram" />
             </Link>
 
             <Link href="https://www.linkedin.com/company/klfacilities/" className="hover:scale-125 transition duration-50 ease-in-out p-2" passHref target="_blank">
-              <img src="/svg/linkedin.svg" alt="LinkedIn" />
+              <Image src="/svg/linkedin.svg" alt="LinkedIn" />
             </Link>
 
             <Link href="https://www.facebook.com/profile.php?id=61557548131305" className="hover:scale-125 transition duration-50 ease-in-out p-2" passHref target="_blank">
-            <img src="/svg/fb.svg" alt="Facebook" />
+            <Image src="/svg/fb.svg" alt="Facebook" />
             </Link>              
             </div>
           </ul>
