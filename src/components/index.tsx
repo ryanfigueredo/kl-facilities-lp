@@ -6,6 +6,9 @@ import { motion } from "framer-motion"
 import React, { MouseEvent } from 'react';
 import { smoothScrollTo } from '../utils/smoothScroll';
 import HubSpotForm from "./formhub";
+import ImageComparison from "./ImageComparison";
+import ImageComparisonTwo from "./ImageComparisonTwo";
+import ImageComparisonTree from "./ImageComparisonTree";
 
 const LandingPage: React.FC = () => {
   const handleSmoothScroll = (e: MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -47,7 +50,7 @@ const LandingPage: React.FC = () => {
       <Link
         href={'https://wa.me/5541984713006'}
         target="_blank"
-        className="fixed bottom-2 right-2 flex items-center justify-center bg-green-400 hover:bg-green-600 w-16 h-16 rounded-full shadow-md transition-colors duration-300"
+        className="fixed bottom-5 right-5 flex items-center justify-center bg-green-400 hover:bg-green-600 w-16 h-16 rounded-full shadow-md z-50 transition-colors duration-300"
       >
         <Image
           className="px-2"
@@ -256,13 +259,27 @@ const LandingPage: React.FC = () => {
         </div>
       </motion.section>
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
-      <motion.section className="w-full px-6 md:px-0 md:pl-24 py-20 mt-4" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0, transition: { delay: 0 , duration: 0.5 } }}>
+      <motion.section className="w-full px-6  md:px-0 md:pl-24 py-20 mt-4" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0, transition: { delay: 0 , duration: 0.5 } }}>
         <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
           <h1>Tratamento <br />
           de Pisos</h1>
+          <h2 className="text-sm md:text-lg font-normal text-[#667a1d]">Veja o antes e depois clicando 
+          </h2>
+          <h2 className="text-sm md:text-lg font-normal text-[#667a1d]">na imagem e arraste para o lado
+          </h2>
         </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-2">
+
+          <ImageComparison />
+          <br />
+          <ImageComparisonTwo />
+          <br />
+          <ImageComparisonTree />
+          </div>
+          
         
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
+
+        {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
         <div>                
           <motion.div className="rounded text-white flex items-end justify-start" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }} viewport={{ once: false, amount: 1 }} animate={ { opacity: 1, y: 0 }} exit={{ opacity: 0, y: 50 }}>
             <Image
@@ -331,7 +348,7 @@ const LandingPage: React.FC = () => {
                 />
           </motion.div>
         </div>
-        </div>
+        </div> */}
       </motion.section>
       <hr className="w-1/2 h-0.5 bg-gray-300 border-none m-2 hidden md:block" />
       <motion.section 

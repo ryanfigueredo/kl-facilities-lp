@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
 
   return (
     <>
-      <nav className="w-full flex justify-between items-center py-4 z-10 shadow-md md:py-6">
+      <nav className="w-full flex justify-center md:gap-20 items-center py-4 z-10 shadow-md md:py-6">
         <div className="flex items-center px-5 py-5">
           <Link href="/">
             <Image draggable={false} src="/svg/logo.svg" alt="Logomarca KL Facilities" width={127} height={67} priority />
