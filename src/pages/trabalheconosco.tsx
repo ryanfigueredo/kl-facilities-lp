@@ -25,23 +25,18 @@ export default function TrabalheConosco() {
           <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
             <h1>Trabalhe <br />conosco</h1>
           </div>
-
           <main className="flex text-lg flex-col md:flex-row justify-center content-center items-center md:gap-4 gap-2">
             <section className='flex md:w-1/3 flex-col g-12'>
               <HubSpotFormTrabalhe />
             </section>
-
             <hr className="w-0.5 h-96 bg-gray-400 border-none m-8 hidden md:block" />
-
             <section className='flex flex-col g-12'>
-            
-          <Image
-            src="/images/job.jpg"
-            alt="Imagem de funcionária da KL trabalhando"
-            width={465}
-            height={550}
-          />
-        
+            <Image
+              src="/images/job.jpg"
+              alt="Imagem de funcionária da KL trabalhando"
+              width={465}
+              height={550}
+            />
             </section>
           </main>
         </div>

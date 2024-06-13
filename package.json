@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^14.2.4",
     "@phosphor-icons/react": "^2.1.5",
     "autoprefixer": "^10.4.19",
     "axios": "^1.7.2",

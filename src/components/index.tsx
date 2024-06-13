@@ -263,9 +263,7 @@ const LandingPage: React.FC = () => {
         <div className="text-2xl md:text-4xl font-bold text-[#667a1d] mb-12 md:ml-[95px]">
           <h1>Tratamento <br />
           de Pisos</h1>
-          <h2 className="text-sm md:text-lg font-normal text-[#667a1d]">Veja o antes e depois clicando 
-          </h2>
-          <h2 className="text-sm md:text-lg font-normal text-[#667a1d]">na imagem e arraste para o lado
+          <h2 className="text-md md:text-base font-normal text-[#667a1d]">Arraste para o lado e veja o antes e depois
           </h2>
         </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-2">
@@ -277,8 +275,6 @@ const LandingPage: React.FC = () => {
           <ImageComparisonTree />
           </div>
           
-        
-
         {/* <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
         <div>                
           <motion.div className="rounded text-white flex items-end justify-start" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2 , duration: 0.5 } }} viewport={{ once: false, amount: 1 }} animate={ { opacity: 1, y: 0 }} exit={{ opacity: 0, y: 50 }}>
@@ -357,7 +353,7 @@ const LandingPage: React.FC = () => {
         whileInView={{ opacity: 1, y: 0, transition: { delay: 0 , duration: 0.5 } }}
       >
       <div className="text-[#667a1d] mb-12 md:ml-[95px] w-full md:w-2/4">
-        <h1 className="text-2xl md:text-4xl font-bold">Conheça a KL Facilities</h1> <br />
+        <h1 className="text-2xl md:text-4xl font-bold">Sobre a KL Facilities</h1> <br />
         <p className="text-lg md:text-xl text-[#464646] font-normal text-justify">
           Somos uma empresa em constante expansão, comprometidos com as políticas de sustentabilidade e com a excelência da qualidade nos serviços prestados a nossos clientes.
           Em nosso portfólio atuamos nos principais ramos da terceirização de serviços, contamos com uma equipe de colaboradores capacitados e treinados para melhor atender aos nossos clientes.
@@ -366,7 +362,7 @@ const LandingPage: React.FC = () => {
         </p>
       </div>
       
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 w-full md:w-2/4">
+      <div className="flex flex-col md:flex-row justify-center  items-center gap-8 md:gap-4 w-full md:w-2/4">
         <motion.div 
           className="rounded text-white m-3" 
           initial={{ opacity: 0, y: 50 }} 
@@ -376,10 +372,11 @@ const LandingPage: React.FC = () => {
           exit={{ opacity: 0, y: 50 }}
         >
           <Image
-            src="/images/cleanerImage.png"
-            alt="Abrangência Nacional"
+            src="/images/professional.jpg"
+            alt="Profissional da KL Facilities"
             width={650}
             height={650}
+            className="rounded-lg shadow-md hover:scale-105 transition ease-in-out"
           />
         </motion.div>
       </div>
